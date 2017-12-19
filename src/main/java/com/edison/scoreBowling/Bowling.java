@@ -54,15 +54,15 @@ public class Bowling {
      * @return bowlingGame getscore.
      **/
     private int getScore(final List<Frame> frames) {
-        BowlingFrame bowlingGame = createBowlingGame(frames);
+        BowlingGame bowlingGame = createBowlingGame(frames);
         return bowlingGame.getScore();
     }
 
     /**
      * createBowlingGame Add Frame in bowlingGame .
      **/
-    private BowlingFrame createBowlingGame(List<Frame> frames) {       
-        BowlingFrame bowlingGame = new BowlingFrame();       
+    private BowlingGame createBowlingGame(List<Frame> frames) {       
+        BowlingGame bowlingGame = new BowlingGame();       
         for (Frame frame : frames) {
             if(frame.getBonus()){
              bowlingGame.addBonus(frame);
@@ -72,15 +72,15 @@ public class Bowling {
         }
         return bowlingGame;
     }
-  /*  
-    public static void main(String []args){
+   
+   /* public static void main(String []args){
     Bowling b = new Bowling();
         try {
-        int score= b.getScore("XXXXXXXXXXXX");
+        int score= b.getScore("3763X81XX907344X90");
             System.out.println("final:"+score);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         } 
-    }
-    */
+    }*/
+    
 }

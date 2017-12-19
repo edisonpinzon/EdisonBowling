@@ -93,9 +93,9 @@ public class PlayerLine{
      **/
     public static void main(String args[]){
       
-        /******************************************Block Print****************************************************/
+        /***************Block Print******************/
         System.out.println("Frame       1       2       3       4       5       6       7       8       9       10");
-        /******************************************Block Print****************************************************/
+        /***************Block Print******************/
          
         PlayerLine begin = new PlayerLine();
         begin.readScoreFile();            

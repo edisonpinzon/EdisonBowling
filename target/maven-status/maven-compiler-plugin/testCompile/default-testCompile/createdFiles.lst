@@ -1,0 +1,10 @@
+com\edison\scoreBowling\SpareFrameParserTest.class
+com\edison\scoreBowling\PlayerLineTest.class
+com\edison\scoreBowling\BowlingGameTest.class
+com\edison\scoreBowling\StrikeFrameParserTest.class
+com\edison\scoreBowling\ZeroFrameParserTest.class
+com\edison\scoreBowling\IntegrationTest.class
+com\edison\scoreBowling\ExtraFinalFrameParserTest.class
+com\edison\scoreBowling\LineParserTest.class
+com\edison\scoreBowling\BowlingTest.class
+com\edison\scoreBowling\NormalFrameParserTest.class

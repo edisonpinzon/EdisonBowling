@@ -14,6 +14,7 @@ package com.edison.scoreBowling;
 public class NormalFrameParser implements FrameParser {
 
     private static final String ZERO = "-";
+    private final String FAIL ="F";
 
     @Override
     public Frame evaluate(String frame) {
@@ -36,7 +37,7 @@ public class NormalFrameParser implements FrameParser {
 
     private int getScore(String partialFrame) {
         int score = 0;
-        if (!ZERO.equals(partialFrame)) {
+        if (!ZERO.equals(partialFrame) && !FAIL.equals(partialFrame)) {
             score = Integer.parseInt(partialFrame);
         }
         return score;
