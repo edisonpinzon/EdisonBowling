@@ -33,11 +33,16 @@
 	 <build>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.4.0</version>
+                <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.edison.scoreBowling.PlayerLine</mainClass>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.edison.scoreBowling.PlayerLine</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
                 </configuration>
             </plugin>
         </plugins>
